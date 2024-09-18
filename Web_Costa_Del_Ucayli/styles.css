@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #a0ca5f;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    color: #333;
+    margin: 0;
+    font-size: 1.8em;
+}
+
+header h1 span {
+    color: #316c21;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 1.1em;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d1e7b3;
+    padding: 40px 20px;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text-content {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.intro h2 span {
+    color: #316c21;
+}
+
+.intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.intro button {
+    background-color: #316c21;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.image-content {
+    width: 50%;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.quote {
+    background-color: #e4f4d1;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+.services {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.services h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.services h2 span {
+    color: #316c21;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service {
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.service p,
+.service button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.service p {
+    bottom: 60px; /* Ajusta el espacio entre el texto y el botón */
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.service button {
+    background-color: #316c21;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+/* Zoom effect on hover */
+.service:hover img {
+    transform: scale(1.1);
+}
+
+/* Show text and button on hover */
+.service:hover p,
+.service:hover button {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.service p {
+    transition-delay: 0.1s;
+}
+
+.service button {
+    transition-delay: 0.2s;
+}
+
+.animals {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #d1e7b3;
+}
+
+.animals h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.animals h2 span {
+    color: #316c21;
+}
+
+.animal-items {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.animal img {
+    max-width: 100%;
+    height: auto;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.photos .photo img {
+    max-width: 100%;
+    height: auto;
+}
+/* Zoom effect for animal images */
+.animal img,
+.photos .photo img {
+    transition: transform 0.3s ease; /* Añadir una transición suave */
+}
+
+.animal img:hover,
+.photos .photo img:hover {
+    transform: scale(1.1); /* Efecto de zoom al hacer hover */
+}
+
+
+.reservation {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.reservation h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #316c21;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #a0ca5f;
+    color: #333;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
